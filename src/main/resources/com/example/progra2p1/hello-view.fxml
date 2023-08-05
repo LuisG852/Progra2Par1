@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <TableView fx:id="tableView" layoutX="339.0" layoutY="29.0" prefHeight="215.0" prefWidth="249.0">
+      <columns>
+         <TableColumn fx:id="nombreColum" prefWidth="75.0" text="nombre" />
+         <TableColumn id="edadColum" fx:id="edadColum" editable="false" prefWidth="75.0" sortType="DESCENDING" sortable="false" text="edad" />
+         <TableColumn fx:id="numeroColum" prefWidth="98.0" text="numero" />
+      </columns>
+   </TableView>
+   <Button id="Borrar" fx:id="idBorrar" layoutX="413.0" layoutY="309.0" mnemonicParsing="false" text="Borrar" />
+   <VBox layoutX="24.0" layoutY="36.0" prefHeight="279.0" prefWidth="221.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <Label text="Nombre">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="nombreInput">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Edad">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="edadInput">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Numero">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="numeroInput">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <Button fx:id="idGuardar" mnemonicParsing="false" text="Guardar">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets left="60.0" top="20.0" />
+         </VBox.margin>
+      </Button>
+      <Label fx:id="myLabel" text="Progreso" />
+      <ProgressBar fx:id="myProgressbar" prefWidth="200.0" progress="0.0">
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </ProgressBar>
+   </VBox>
+</AnchorPane>
